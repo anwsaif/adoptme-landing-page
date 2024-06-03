@@ -44,7 +44,7 @@ function Header() {
           <div className="flex space-x-3 items-center lg:space-x-6">
             <SearchButton className="hidden lg:block" />
             <a href="#" className="text-primary hover:text-secondary">Sign in</a>
-            <a href="#" className="text-white bg-primary px-2 py-1 lg:px-6 lg:rounded-[3px] lg:py-3 rounded-sm hover:bg-white hover:text-primary hover:ring-primary hover:ring-1">Sign up</a>
+            <a href="#" className="text-white bg-primary px-2 py-1 lg:px-6 lg:rounded-[3px] lg:py-3 rounded-sm hover:bg-white hover:text-primary hover:ring-primary hover:ring-1 hover:lg:bg-transparent">Sign up</a>
           </div>
         </nav>
         <SearchButton />
