@@ -6,11 +6,11 @@ html {
     @apply text-secondary;
 }
 
-header li {
+header a {
     @apply transition duration-300;
 }
 
-header li:hover {
+header a:hover {
     @apply text-primary;
 }
 
