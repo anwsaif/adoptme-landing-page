@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    @apply text-secondary;
+body {
+  @apply text-secondary lg:text-xl;
 }
 
 header a {
-    @apply transition duration-300;
-}
-
-header a:hover {
-    @apply text-primary;
+  @apply transition duration-300 hover:text-primary;
 }
 
 .hamburger-react {
-    @apply text-primary z-50;
+  @apply z-50 text-primary hover:text-secondary;
 }
 
-.hamburger-react:hover {
-    @apply text-secondary;
+nav > ul > li > ul > li > a {
+  @apply align-middle hover:text-white;
 }
 
-.hamburger-react:focus {
-    @apply outline-none;
+nav > ul > li > ul > li {
+  @apply transition duration-300 hover:bg-primary hover:text-white py-1;
 }
