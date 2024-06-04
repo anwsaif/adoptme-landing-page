@@ -1,3 +1,4 @@
+import Community from './sections/Community'
 import Header from './sections/Header'
 import Hero from './sections/Hero'
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Community />
     </>
   )
 }
