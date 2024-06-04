@@ -34,7 +34,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <img src={hero} alt="Hero Image" className="2xl:w-7/12" />
+        <img src={hero} alt="Hero Image" className="min-lg:lg:w-1/2 2xl:w-7/12" />
       </div>
     </section>
   );
