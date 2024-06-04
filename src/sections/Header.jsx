@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/brand-logo.png";
+import logo from "../assets/brand-logo.svg";
 import { Fade as Hamburger } from 'hamburger-react'
 import { Icon } from '@iconify/react';
 import SearchButton from "../ui/SearchButton";
@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className="fixed w-full top-0 z-40">
-      <div className="container mx-auto flex items-center justify-between lg:py-10 px-2 lg:px-8">
+      <div className="container mx-auto flex items-center justify-between lg:py-10 px-2 lg:px-8 xl:px-0">
         <span className="lg:hidden">
         <Hamburger  toggled={isOpen} toggle={setOpen} size={24} />
         </span>
