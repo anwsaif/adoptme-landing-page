@@ -16,8 +16,8 @@ function Header() {
         <a href="#">
           <img src={logo} alt="AdoptMe" />
         </a>
-        <nav className={"flex max-lg:flex-col  max-lg:fixed max-lg:w-screen max-lg:h-[100dvh] top-0 left-0 items-center max-lg:space-y-6 lg:space-x-40 justify-center lg:justify-between bg-white transition lg:bg-transparent duration-500 ease-in-out lg:opacity-100 origin-bottom " + (isOpen ? " max-lg:opacity-100 max-lg:z-40 max-lg:translate-y-0" : "max-lg:opacity-0 max-lg:-z-50 max-lg:-translate-y-[100dvh]")}>
-          <ul className="flex items-center justify-between max-lg:space-y-4 lg:space-x-12 max-lg:flex-col ">
+        <nav className={"flex max-lg:flex-col  max-lg:fixed max-lg:w-screen max-lg:h-[100dvh] top-0 left-0 items-center max-lg:space-y-6 lg:space-x-20 xl:space-x-40 justify-center lg:justify-between bg-white transition lg:bg-transparent duration-500 ease-in-out lg:opacity-100 origin-bottom " + (isOpen ? " max-lg:opacity-100 max-lg:z-40 max-lg:translate-y-0" : "max-lg:opacity-0 max-lg:-z-50 max-lg:-translate-y-[100dvh]")}>
+          <ul className="flex items-center justify-between max-lg:space-y-4 lg:space-x-8 xl:space-x-12 max-lg:flex-col ">
             <li>
               <a href="#">Home</a>
             </li>

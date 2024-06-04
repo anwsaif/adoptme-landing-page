@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-secondary lg:text-xl;
+  @apply text-secondary xl:text-xl;
 }
 
 header a {
