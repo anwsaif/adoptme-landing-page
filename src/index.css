@@ -21,3 +21,11 @@ nav > ul > li > ul > li > a {
 nav > ul > li > ul > li {
   @apply transition duration-300 hover:bg-primary hover:text-white py-1;
 }
+
+h1 > svg {
+  @apply rotate-45 inline;
+}
+
+a { 
+  @apply transition;
+}
