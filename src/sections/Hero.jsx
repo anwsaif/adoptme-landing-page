@@ -14,7 +14,7 @@ function Hero() {
   return (
     <section className="bg-gradient-to-b from-[rgba(195,222,255,0.33)] via-[rgba(216,216,216,0)] to-[rgba(190,220,255,0.22)] min-h-screen">
       <div className="h-16"></div>
-      <div className="container mx-auto flex flex-col-reverse items-center justify-between px-3 gap-y-8 lg:flex-row lg:px-4 xl:px-0 lg:py-10 xl:py-28">
+      <div className="container mx-auto flex flex-col-reverse items-center justify-between px-3 gap-y-8 lg:flex-row lg:px-6 xl:px-0 lg:py-20 xl:py-28 gap-x-8">
         <div className="flex flex-col space-y-4 lg:space-y-8">
           <h1 className="text-4xl text-primary lg:text-[54px] lg:leading-tight max-w-[518px]">
             Let’s Choose and <Icon icon={"fa:paw"} />
@@ -34,7 +34,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <img src={hero} alt="Hero Image" className="min-lg:lg:w-1/2 2xl:w-7/12" />
+        <img src={hero} alt="Hero Image" className="max-lg:w-auto lg:w-5/12 2xl:w-7/12" />
       </div>
     </section>
   );
