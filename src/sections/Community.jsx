@@ -14,7 +14,7 @@ function Community() {
   }, []);
   return (
     <section id="community">
-      <div className="container mx-auto flex flex-col gap-y-11 px-3 py-9 lg:gap-y-20 lg:px-4 xl:px-0">
+      <div className="container mx-auto flex flex-col gap-y-11 px-3 py-9 lg:gap-y-20 lg:px-4 xl:px-0 lg:py-[4.5rem]">
         <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2">
           <MainText
             title={"our mission for pet"}
