@@ -32,3 +32,11 @@ h1 > svg {
 a { 
   @apply transition;
 }
+
+a.bg-primary {
+  @apply hover:bg-transparent hover:text-primary hover:ring-1 hover:ring-primary ;
+}
+
+#home, footer {
+  @apply bg-gradient-to-b from-[rgba(195,222,255,0.33)] via-[rgba(216,216,216,0)] to-[rgba(190,220,255,0.22)];
+}
