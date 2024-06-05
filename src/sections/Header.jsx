@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import logo from "../assets/brand-logo.svg";
 import { Fade as Hamburger } from "hamburger-react";
 import { Icon } from "@iconify/react";
@@ -23,6 +23,13 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const head = document.getElementsByTagName('header')[0]
+    Array.from(head.getElementsByTagName('a')).map(a => {
+      a.addEventListener('click', () => setOpen(false))
+    })
+  }, [])
 
   return (
     <header
