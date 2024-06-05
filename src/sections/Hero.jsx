@@ -12,7 +12,7 @@ const supportFileNames = [
 
 function Hero() {
   return (
-    <section className="bg-gradient-to-b from-[rgba(195,222,255,0.33)] via-[rgba(216,216,216,0)] to-[rgba(190,220,255,0.22)] min-h-screen">
+    <section className=" min-h-screen" id="home">
       <div className="h-16"></div>
       <div className="container mx-auto flex flex-col-reverse items-center justify-between px-3 gap-y-8 lg:flex-row lg:px-6 xl:px-0 lg:py-20 xl:py-28 gap-x-8">
         <div className="flex flex-col space-y-4 lg:space-y-8">
@@ -22,7 +22,7 @@ function Hero() {
           </h1>
           <p className="lg:text-xl max-w-[413px]">Adopt a pet, give them the best treatment, and you will feel really happy of friendship with your pet.</p>
           <div className="flex gap-x-9 text-lg items-center lg:text-[1.375rem]">
-            <a href="#" className="bg-primary hover:bg-transparent hover:ring-1 hover:ring-primary text-white hover:text-primary rounded-[3px] py-2 px-4 lg:py-4 lg:px-8">Adopt now</a>
+            <a href="#" className="bg-primary text-white rounded-[3px] py-2 px-4 lg:py-4 lg:px-8">Adopt now</a>
             <a href="#" className="hover:text-primary">Donate food</a>
           </div>
           <div className="flex gap-y-2 lg:gap-y-4 flex-col">
