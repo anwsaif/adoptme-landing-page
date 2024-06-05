@@ -10,6 +10,7 @@ export default {
         primary: '#304057',
         secondary: '#6D6D6D',
         tertiary: '#637C95',
+        quarternary: '#E6E6E6',
         dark: '#151515'
       }
     },
