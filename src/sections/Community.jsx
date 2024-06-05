@@ -15,7 +15,7 @@ function Community() {
   return (
     <section id="community">
       <div className="container mx-auto flex flex-col gap-y-11 px-3 py-9 lg:gap-y-20 lg:px-4 xl:px-0 lg:py-[4.5rem]">
-        <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2">
+        <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2 lg:space-y-24">
           <MainText
             title={"our mission for pet"}
             slogan={"Let’s Choose and Adopt your New Lovely Pet"}
@@ -23,6 +23,7 @@ function Community() {
           <MainText
             description={`You need to see some pets in Adoptme. We have the friend that's you need to have. We also have the equipment you need to take care of it.`}
             className={"!mt-3 lg:mt-6"}
+            descClass="mt-auto"
           />
           <img src="/src/assets/community.png" alt="Community" />
           <div className="flex flex-col gap-y-7 lg:gap-y-14">
