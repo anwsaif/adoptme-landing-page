@@ -15,17 +15,15 @@ function Community() {
   return (
     <section id="community">
       <div className="container mx-auto flex flex-col gap-y-11 px-3 py-9 lg:gap-y-20 lg:px-4 xl:px-0">
-        <div className="flex flex-col justify-between gap-x-10 lg:flex-row lg:gap-x-24">
+        <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2">
           <MainText
             title={"our mission for pet"}
             slogan={"Let’s Choose and Adopt your New Lovely Pet"}
           />
           <MainText
             description={`You need to see some pets in Adoptme. We have the friend that's you need to have. We also have the equipment you need to take care of it.`}
-            descClass={"mt-auto"}
+            className={"!mt-3 lg:mt-6"}
           />
-        </div>
-        <div className="flex flex-col gap-x-12 gap-y-12 lg:flex-row lg:gap-x-24">
           <img src="/src/assets/community.png" alt="Community" />
           <div className="flex flex-col gap-y-7 lg:gap-y-14">
             <MainText
@@ -35,7 +33,7 @@ function Community() {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. It ac purus eget. Sit dolor est proin vestibulum, duis. im dolor sit amet, consec"
               }
             />
-            <div className="flex gap-x-4 lg:gap-x-8 justify-between">
+            <div className="flex max-w-[513px] justify-between gap-x-4 lg:gap-x-8">
               {nums.map(({ num, desc }, i) => (
                 <Numbers key={i} num={num} desc={desc} />
               ))}
