@@ -40,3 +40,16 @@ a.bg-primary {
 #home, footer {
   @apply bg-gradient-to-b from-[rgba(195,222,255,0.33)] via-[rgba(216,216,216,0)] to-[rgba(190,220,255,0.22)];
 }
+
+footer li {
+  @apply bg-white px-4 lg:px-8 py-3 lg:py-7 border border-quarternary;
+}
+
+footer summary {
+  @apply text-primary text-sm lg:text-lg mb-1 lg:mb-2;
+  list-style-type: disc;
+}
+
+footer details > p {
+  @apply text-xs lg:text-base ml-4;
+}
