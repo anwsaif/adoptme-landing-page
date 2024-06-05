@@ -102,7 +102,7 @@ function Header() {
             </a>
             <a
               href="#"
-              className="rounded-sm bg-primary px-2 py-1 text-white hover:bg-white hover:text-primary hover:ring-1 hover:ring-primary lg:rounded-[3px] lg:px-6 lg:py-3 hover:lg:bg-transparent"
+              className="rounded-sm bg-primary px-2 py-1 text-white lg:rounded-[3px] lg:px-6 lg:py-3"
             >
               Sign up
             </a>
