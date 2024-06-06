@@ -11,8 +11,8 @@ function Footer() {
           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. It ac purus eget. Sim dolor sit amet, consectetur adipisci.'}
           className='text-center items-center'
         />
-        <div className="flex w-1/2 gap-x-5 lg:gap-x-10">
-          <ul className="lg:min-w-[629px]">
+        <div className="flex w-full gap-x-5 lg:w-1/2 lg:gap-x-10">
+          <ul className="w-full lg:min-w-[629px]">
             <li>
               <details>
                 <p className="max-w-[448px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore consequatur temporibus neque dicta laboriosam </p>
