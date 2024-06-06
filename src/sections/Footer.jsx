@@ -15,7 +15,27 @@ function Footer() {
           <ul className="w-full lg:min-w-[629px]">
             <li>
               <details>
-                <p className="max-w-[448px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore consequatur temporibus neque dicta laboriosam </p>
+                <summary className=''>How to adopt a pet? 
+                </summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore consequatur temporibus neque dicta laboriosam </p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>How long does the process take to adopt?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quaerat.</p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>How much should i spend to adopt?</summary>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit rem consequuntur, doloremque dolores aut?</p>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Where is my nearest adoption place?</summary>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil qui hic ullam blanditiis perspiciatis vero, mollitia ipsam.</p>
               </details>
             </li>
           </ul>
