@@ -35,21 +35,49 @@ a {
 
 a.bg-primary {
   @apply hover:bg-transparent hover:text-primary hover:ring-1 hover:ring-primary ;
+  }
+
+  #home, footer {
+    @apply bg-gradient-to-b from-[rgba(195,222,255,0.33)] via-[rgba(216,216,216,0)] to-[rgba(190,220,255,0.22)];
+  }
+
+  footer li {
+    @apply bg-white px-8 lg:px-16 py-3 lg:py-7 border border-quarternary;
+  }
+
+  summary {
+    @apply text-primary text-sm lg:text-lg relative after:absolute;
+    list-style-type: none;
+  }
+  [open] summary {
+  @apply mb-1 lg:mb-2 ;
 }
 
-#home, footer {
-  @apply bg-gradient-to-b from-[rgba(195,222,255,0.33)] via-[rgba(216,216,216,0)] to-[rgba(190,220,255,0.22)];
-}
+  details {
+    @apply hover:cursor-pointer before:inline-block relative;
+  }
 
-footer li {
-  @apply bg-white px-4 lg:px-8 py-3 lg:py-7 border border-quarternary;
-}
+  details::before {
+    @apply absolute top-2 lg:top-3 -left-4 w-1 h-1 bg-primary rounded-full;
+  }
 
-footer summary {
-  @apply text-primary text-sm lg:text-lg mb-1 lg:mb-2;
-  list-style-type: disc;
-}
+  details > p {
+    @apply text-xs lg:text-base;
+  }
 
-footer details > p {
-  @apply text-xs lg:text-base ml-4;
-}
+  summary::marker {
+    content: none;
+  }
+  summary::after {
+    @apply w-4 h-4 transition right-0 top-1 -right-4 lg:right-0;
+    background: url('data:image/svg+xml,<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.8588 5.95463C2.05647 5.74372 2.32454 5.62524 2.60405 5.62524C2.88356 5.62524 3.15163 5.74372 3.3493 5.95463L8.56712 11.5234L13.7849 5.95463C13.9837 5.7497 14.25 5.63631 14.5264 5.63887C14.8028 5.64143 15.0672 5.75975 15.2626 5.96833C15.458 6.17692 15.5689 6.45908 15.5713 6.75405C15.5737 7.04902 15.4675 7.3332 15.2754 7.54538L9.31237 13.9095C9.1147 14.1204 8.84663 14.2389 8.56712 14.2389C8.28761 14.2389 8.01954 14.1204 7.82187 13.9095L1.8588 7.54538C1.66118 7.33441 1.55017 7.04831 1.55017 6.75C1.55017 6.45169 1.66118 6.1656 1.8588 5.95463Z" fill="%23304057"/></svg>')
+  }
+
+  [open] summary::after {
+    @apply rotate-180 opacity-25;
+  }
+
+details p {
+    @apply max-w-[448px];
+  }
+
