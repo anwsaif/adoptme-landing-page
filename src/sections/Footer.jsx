@@ -1,6 +1,21 @@
 import React from 'react'
 import MainText from '../ui/MainText'
 
+const faqs = [
+  [
+    ['How to adopt a pet?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore consequatur temporibus neque dicta laboriosam '],
+    ['How long does the process take to adopt?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quaerat.'],
+    ['How much should i spend to adopt?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit rem consequuntur, doloremque dolores aut?'],
+    ['Where is my nearest adoption place?', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil qui hic ullam blanditiis perspiciatis vero, mollitia ipsam.']
+  ],
+  [
+    ['Does adopt me also sell my dog needs?', 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.'],
+    ['Was I given an official adoption letter when I adopted?', 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptatibus.'],
+    ['What are the requirements for adopting a pet?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, reprehenderit eligendi?'],
+    ['What kind of care should I give my pet?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam consequuntur impedit nostrum. Id amet autem nobis.']
+  ]
+]
+
 function Footer() {
   return (
     <footer>
@@ -12,33 +27,18 @@ function Footer() {
           className='items-center text-center'
         />
         <div className="flex w-full gap-x-5 lg:w-1/2 lg:gap-x-10">
-          <ul className="w-full lg:min-w-[629px]">
-            <li>
-              <details>
-                <summary className=''>How to adopt a pet? 
-                </summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolore consequatur temporibus neque dicta laboriosam </p>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>How long does the process take to adopt?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quaerat.</p>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>How much should i spend to adopt?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit rem consequuntur, doloremque dolores aut?</p>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Where is my nearest adoption place?</summary>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur nihil qui hic ullam blanditiis perspiciatis vero, mollitia ipsam.</p>
-              </details>
-            </li>
-          </ul>
+          {faqs.map((data) => {
+            return <ul className="w-full lg:min-w-[629px]">
+              {data.map((q) => {
+                return <li>
+                  <details>
+                    <summary>{q[0]}</summary>
+                    <p>{q[1]}</p>
+                  </details>
+                </li>
+              })}
+            </ul>
+          })}
         </div>
       </div>
     </footer>
