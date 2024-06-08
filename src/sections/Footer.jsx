@@ -18,7 +18,7 @@ const faqs = [
 
 function Footer() {
   return (
-    <footer>
+    <footer id="faqs">
       <div className="container mx-auto flex flex-col items-center justify-between gap-y-12 px-3 py-9 lg:gap-x-10 lg:gap-y-24 lg:px-4 lg:py-[4.5rem] xl:px-0">
         <MainText 
           title={'frequently asked questions'}
