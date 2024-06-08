@@ -10,7 +10,8 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      const navHeight = document.getElementsByTagName('header')[0].offsetHeight
+      if (window.scrollY > navHeight/1.5) {
         setScrolled(true);
       } else {
         setScrolled(false);
