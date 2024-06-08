@@ -93,7 +93,7 @@ function Header() {
               <a href="#stories">Stories with pet</a>
             </li>
             <li>
-              <a href="#faq">FAQ</a>
+              <a href="#faqs">FAQ</a>
             </li>
           </ul>
           <div className="flex items-center space-x-3 lg:space-x-6">
