@@ -26,9 +26,9 @@ function Footer() {
           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. It ac purus eget. Sim dolor sit amet, consectetur adipisci.'}
           className='items-center text-center'
         />
-        <div className="flex w-full gap-x-5 lg:w-1/2 lg:gap-x-10">
+        <div className="flex w-full flex-col gap-x-5 md:flex-row lg:flex-row lg:gap-x-10">
           {faqs.map((data) => {
-            return <ul className="w-full lg:min-w-[629px]">
+            return <ul className="flex w-full flex-col 2xl:min-w-[629px]">
               {data.map((q) => {
                 return <li>
                   <details>
