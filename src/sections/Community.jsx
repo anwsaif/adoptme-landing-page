@@ -8,13 +8,9 @@ const nums = [
   { num: "3k+", desc: "proin vestibulum, duis. im dua." },
 ];
 function Community() {
-  useEffect(() => {
-    document.getElementById("community").style.scrollMarginTop =
-      document.getElementsByTagName("header")[0].offsetHeight + "px";
-  }, []);
   return (
     <section id="community">
-      <div className="container mx-auto flex flex-col gap-y-11 px-3 py-9 lg:gap-y-20 lg:px-4 xl:px-0 lg:py-[4.5rem]">
+      <div className="container mx-auto flex flex-col gap-y-11 px-3 py-9 lg:gap-y-20 lg:px-4 lg:py-[4.5rem] xl:px-0">
         <div className="grid grid-cols-1 space-y-10 lg:grid-cols-2 lg:space-y-24">
           <MainText
             title={"our mission for pet"}
