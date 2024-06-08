@@ -81,3 +81,19 @@ details p {
     @apply max-w-[448px];
   }
 
+
+#root > * {
+  scroll-margin-top: 48px;
+}
+
+@media (min-width: 1024px) {
+  #root > * {
+    scroll-margin-top: 88px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #root > * {
+    scroll-margin-top: 92px;
+  }
+}
