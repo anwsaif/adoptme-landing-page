@@ -40,6 +40,12 @@ function Footer() {
             </ul>
           })}
         </div>
+        <div className='flex flex-col items-center justify-between gap-4 border-t border-[#C6CFDC] pt-5 text-center font-[Inter] tracking-widest text-black lg:flex-row lg:pt-10'>
+          <span>Copyright 2023. Adoptme. All right reserved</span>
+          <span>
+            <a href="tel:+62811767666">(62)811-767-666</a> | <a href='mailto:adoptme@email.com'>adoptme@email.com</a>
+          </span>
+        </div>
       </div>
     </footer>
   )
