@@ -11,7 +11,7 @@ function Adoption() {
           slogan={'Adopt the pet that has waited too long'}
           description={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. It ac purus eget. Sit dolor est proin vestibulum, duis. im dolor sit amet, consectetur adipisci.'}
         />
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-end gap-x-5 lg:gap-x-10">
 
           <button>
             Filters
