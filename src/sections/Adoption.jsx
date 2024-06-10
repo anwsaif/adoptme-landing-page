@@ -1,5 +1,6 @@
 import React from 'react'
 import MainText from '../ui/MainText'
+import { Icon } from '@iconify/react'
 
 function Adoption() {
   return (
