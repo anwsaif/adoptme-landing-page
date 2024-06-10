@@ -33,8 +33,9 @@ a {
   @apply transition;
 }
 
-a.bg-primary {
-  @apply hover:bg-transparent hover:text-primary hover:ring-1 hover:ring-primary ;
+a.bg-primary, 
+button.bg-primary {
+  @apply hover:bg-transparent hover:text-primary hover:ring-1 hover:ring-primary transition duration-300;
   }
 
   #home, footer {
@@ -97,3 +98,4 @@ details p {
     scroll-margin-top: 92px;
   }
 }
+
