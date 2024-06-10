@@ -17,12 +17,13 @@ function Adoption() {
             Filters
             <Icon icon={'mi:filter'} />
           </button>
-          <button>
-            <Icon icon={'ep:arrow-left-bold'}/>
-          </button>
-          <button>
-            <Icon icon={'ep:arrow-right-bold'}/>
-          </button>
+          <div className="flex justify-between gap-x-9 lg:gap-x-16">
+            <button>
+              <Icon icon={'ep:arrow-left-bold'}/>
+            </button>
+            <button>
+              <Icon icon={'ep:arrow-right-bold'}/>
+            </button>
         </div>
       </div>
     </section>
