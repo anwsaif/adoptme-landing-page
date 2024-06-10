@@ -24,6 +24,7 @@ function Adoption() {
             <button>
               <Icon icon={'ep:arrow-right-bold'}/>
             </button>
+          </div>
         </div>
       </div>
     </section>
