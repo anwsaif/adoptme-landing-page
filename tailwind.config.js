@@ -12,6 +12,9 @@ export default {
         tertiary: '#637C95',
         quarternary: '#E6E6E6',
         dark: '#151515'
+      },
+      dropShadow: {
+        primary: '0 0 4px rgba(0,0,0,0.15)'
       }
     },
   },
