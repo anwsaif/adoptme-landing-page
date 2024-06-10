@@ -13,7 +13,7 @@ function Adoption() {
         />
         <div className="flex items-center justify-end gap-x-5 lg:gap-x-10">
 
-          <button>
+          <button className='flex items-center gap-x-14 rounded-[3px] bg-white p-4 drop-shadow-[0_0_4px_rgba(0,0,0,0.15)] lg:gap-x-36'>
             Filters
             <Icon icon={'mi:filter'} />
           </button>
