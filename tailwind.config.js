@@ -11,7 +11,8 @@ export default {
         secondary: '#6D6D6D',
         tertiary: '#637C95',
         quarternary: '#E6E6E6',
-        dark: '#151515'
+        dark: '#151515',
+        inactive: '#A0BBD7'
       },
       dropShadow: {
         primary: '0 0 4px rgba(0,0,0,0.15)'
