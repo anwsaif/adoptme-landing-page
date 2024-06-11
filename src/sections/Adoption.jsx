@@ -82,7 +82,7 @@ function Adoption() {
             </button>
           </div>
         </div>
-        <div className="flex snap-x snap-mandatory gap-x-4 overflow-x-scroll whitespace-nowrap transition lg:gap-x-9" 
+        <div className="flex snap-x snap-mandatory gap-x-4 overflow-x-scroll whitespace-nowrap pb-8 transition lg:gap-x-9" 
           ref={snapRef}
           onScroll={checkScrollPosition}
         >
