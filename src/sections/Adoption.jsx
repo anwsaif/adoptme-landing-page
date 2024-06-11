@@ -4,13 +4,10 @@ import { Icon } from '@iconify/react'
 import AdoptionCard from '../ui/AdoptionCard'
 
 function Adoption() {
-  const [scrollPosition, setScrollPosition] = useState(0)
-
+  const snapRef = useRef(null)
   const [isLeft, setLeft] = useState(true)
   const [isRight, setRight] = useState(false)
-
-  const snapRef = useRef(null)
-
+  
   const data = [
     {name: 'Bruno', days: '180', age: '9 months', img: 'bruno.png'},
     {name: 'Bruno', days: '180', age: '9 months', img: 'bruno.png'},
@@ -28,28 +25,24 @@ function Adoption() {
     {name: 'Bruno', days: '180', age: '9 months', img: 'bruno.png'},
   ]
 
-  const handleScroll = () => {
+  const checkScrollPosition = () => {
     if(snapRef.current){
-      const { scrollLeft } = snapRef.current
-      setScrollPosition(scrollLeft)
-      console.log('Scrolled to: ' + scrollPosition)
+      const { scrollLeft, clientWidth, scrollWidth } = snapRef.current
+      setLeft(scrollLeft === 0)
+      setRight(scrollLeft + clientWidth >= scrollWidth)
     }
   }
 
   useEffect(() => {
-    const container = snapRef.current
-    if(container) {
-      container.addEventListener('scroll', handleScroll)
-      return () => container.removeEventListener('scroll', handleScroll)
-    }
+    checkScrollPosition()
   }, [])
   
   const handleAdoptionPrev = () => {
     if(snapRef.current) {
       const container = snapRef.current
       const scrollAmout = container.clientWidth
-      container.scrollTo({
-        left: Math.max(0, container.scrollLeft - scrollAmout),
+      container.scrollBy({
+        left: -scrollAmout,
         behavior: 'smooth'
       })
     }
@@ -58,9 +51,9 @@ function Adoption() {
   const handleAdoptionNext = () => {
     if (snapRef.current) {
       const container = snapRef.current;
-      const scrollAmount = container.clientWidth; // Scroll by the visible width of the container
-      container.scrollTo({
-        left: Math.min(container.scrollWidth, container.scrollLeft + scrollAmount),
+      const scrollAmount = container.clientWidth; 
+      container.scrollBy({
+        left: scrollAmount,
         behavior: 'smooth',
       });       
     }
@@ -89,7 +82,10 @@ function Adoption() {
             </button>
           </div>
         </div>
-        <div className="snap-x flex gap-x-4 lg:gap-x-9 snap-mandatory transition overflow-x-scroll whitespace-nowrap" ref={snapRef}>
+        <div className="snap-x flex gap-x-4 lg:gap-x-9 snap-mandatory transition overflow-x-scroll whitespace-nowrap" 
+          ref={snapRef}
+          onScroll={checkScrollPosition}
+        >
           {data.map(({name, days, age, img}, i) => (
             <AdoptionCard key={i} name={name} days={days} age={age} img={img} />
           ))}
