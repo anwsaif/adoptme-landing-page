@@ -74,15 +74,15 @@ function Adoption() {
             <Icon icon={'mi:filter'} />
           </button>
           <div className="flex justify-between gap-x-9 lg:gap-x-16">
-            <button onClick={handleAdoptionPrev}>
+            <button onClick={handleAdoptionPrev} disabled={isLeft}>
               <Icon icon={'ep:arrow-left-bold'} className={isLeft ? 'text-inactive':''} />
             </button>
-            <button onClick={handleAdoptionNext}>
+            <button onClick={handleAdoptionNext} disabled={isRight}>
               <Icon icon={'ep:arrow-right-bold'} className={isRight ? 'text-inactive': ''} />
             </button>
           </div>
         </div>
-        <div className="snap-x flex gap-x-4 lg:gap-x-9 snap-mandatory transition overflow-x-scroll whitespace-nowrap" 
+        <div className="flex snap-x snap-mandatory gap-x-4 overflow-x-scroll whitespace-nowrap transition lg:gap-x-9" 
           ref={snapRef}
           onScroll={checkScrollPosition}
         >
