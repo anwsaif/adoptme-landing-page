@@ -33,6 +33,7 @@ function Header() {
   }, [])
 
   return (
+    <>
     <header
       className={
         "fixed top-0 z-40 w-full transition duration-300 " +
@@ -103,12 +104,16 @@ function Header() {
               className="rounded-sm bg-primary px-2 py-1 text-white lg:rounded-[3px] lg:px-6 lg:py-3"
             >
               Sign up
-            </a>
-          </div>
-        </nav>
-        <SearchButton />
-      </div>
-    </header>
+              </a>
+            </div>
+          </nav>
+          <SearchButton />
+        </div>
+      </header>
+      <a href="#" className={"fixed bottom-4 right-4 h-12 w-12 rounded-full bg-quarternary p-2 drop-shadow-lg hover:opacity-80 " + (isScrolled ? 'z-50 opacity-100': '-z-50 opacity-0')}>
+        <Icon icon={'mdi:paw'} className="h-full w-full" />
+      </a>
+    </>
   );
 }
 
