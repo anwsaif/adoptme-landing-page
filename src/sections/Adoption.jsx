@@ -10,13 +10,13 @@ function Adoption() {
   
   const data = [
     {name: 'Bruno', days: '180', age: '9 months', img: 'bruno.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14-1.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14-2.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14-3.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14-4.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14-5.png'},
-    {name: 'Bruno', days: '180', age: '9 months', img: 'image 14-6.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14-1.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14-2.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14-3.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14-4.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14-5.png'},
+    {name: 'Bruno', days: '180', age: '9 months', img: 'image-14-6.png'},
   ]
 
   const checkScrollPosition = () => {
