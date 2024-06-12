@@ -9,7 +9,7 @@ function AdoptionCard(props) {
         <button className='mb-[5em] w-1/3 rounded-[3px] bg-primary py-2 text-white hover:-translate-y-2 hover:!bg-primary hover:!text-white group-hover:opacity-100 lg:w-2/3 lg:py-4 lg:opacity-0'>Adopt</button>
         <span className='text-base text-white transition duration-200 hover:text-dark lg:text-xl'>{days} days waiting</span>
       </div>
-      <div className='my-2 flex flex-col gap-2 text-center text-sm text-dark lg:my-4 lg:gap-4 lg:text-lg'>
+      <div className='my-2 flex flex-col gap-1 text-center text-sm text-dark lg:my-4 lg:gap-2 lg:text-lg'>
         <span>{name}</span>
         <span>{age} old</span>
       </div>
