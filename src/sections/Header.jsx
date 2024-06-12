@@ -73,16 +73,13 @@ function Header() {
               <Icon icon="ep:arrow-down-bold" width={18} />
               <ul className="absolute top-7 flex min-w-max origin-top scale-y-0 flex-col divide-y divide-slate-200 rounded bg-white p-2 text-center shadow duration-200 group-hover:lg:scale-y-100">
                 <li>
-                  <a href="#">Dog</a>
+                  <a href="#adoption">Dog</a>
                 </li>
                 <li>
-                  <a href="#">Cat</a>
+                  <a href="#adoption">Cat</a>
                 </li>
                 <li>
-                  <a href="#">Komodo Dragon</a>
-                </li>
-                <li>
-                  <a href="#">Others</a>
+                  <a href="#adoption">Others</a>
                 </li>
               </ul>
             </li>
