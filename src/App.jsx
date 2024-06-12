@@ -1,4 +1,5 @@
 import { Suspense, lazy } from 'react'
+import Loading from './ui/Loading'
 const Adoption = lazy(() => import('./sections/Adoption'))
 const Community = lazy(() => import('./sections/Community'))
 const Header = lazy(() => import('./sections/Header'))
@@ -9,7 +10,7 @@ const Footer = lazy(() => import('./sections/Footer'))
 function App() {
   return (
     <>
-      <Suspense fallback= {<div>Loading...</div>}>
+      <Suspense fallback= {<Loading />}>
       <Header />
       <Hero />
       <Community />
