@@ -63,11 +63,11 @@ function Adoption() {
         />
         <div className="flex items-center justify-end gap-x-5 lg:gap-x-10">
 
-          <button className='flex items-center gap-x-14 rounded-[3px] bg-white p-4 drop-shadow-primary lg:gap-x-36'>
+          <button data-aos="fade-right" className='flex items-center gap-x-14 rounded-[3px] bg-white p-4 drop-shadow-primary lg:gap-x-36'>
             Filters
             <Icon icon={'mi:filter'} />
           </button>
-          <div className="flex justify-between gap-x-9 lg:gap-x-16">
+          <div data-aos="fade-left" className="flex justify-between gap-x-9 lg:gap-x-16">
             <button onClick={handleAdoptionPrev} disabled={isLeft}>
               <Icon icon={'ep:arrow-left-bold'} className={isLeft ? 'text-inactive':''} />
             </button>
@@ -76,7 +76,7 @@ function Adoption() {
             </button>
           </div>
         </div>
-        <div className="flex snap-x snap-mandatory gap-x-4 overflow-x-scroll whitespace-nowrap pb-8 transition lg:gap-x-9" 
+        <div data-aos="fade-in" className="flex snap-x snap-mandatory gap-x-4 overflow-x-scroll whitespace-nowrap pb-8 transition lg:gap-x-9" 
           ref={snapRef}
           onScroll={checkScrollPosition}
         >
