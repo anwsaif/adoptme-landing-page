@@ -21,7 +21,7 @@ function Community() {
             className={"!mt-3 lg:mt-6"}
             descClass="mt-auto"
           />
-          <img src="/src/assets/community.png" alt="Community" />
+          <img data-aos="fade-right" src="/src/assets/community.png" alt="Community" />
           <div className="flex flex-col gap-y-7 lg:gap-y-14">
             <MainText
               title={"adoptme community"}
@@ -32,7 +32,7 @@ function Community() {
             />
             <div className="flex max-w-[513px] justify-between gap-x-4 lg:gap-x-8">
               {nums.map(({ num, desc }, i) => (
-                <Numbers key={i} num={num} desc={desc} />
+                <Numbers key={i} i={i} num={num} desc={desc} />
               ))}
             </div>
           </div>
