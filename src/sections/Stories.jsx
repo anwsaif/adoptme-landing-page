@@ -4,8 +4,9 @@ import MainText from "../ui/MainText";
 function Stories() {
   return (
     <section id="stories">
-      <div className="container mx-auto flex flex-col items-center lg:gap-x-10 justify-between gap-y-11 px-3 py-9 lg:flex-row lg:gap-y-20 lg:px-4 lg:py-[4.5rem] xl:px-0">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-y-11 px-3 py-9 lg:flex-row lg:gap-x-10 lg:gap-y-20 lg:px-4 lg:py-[4.5rem] xl:px-0">
         <img
+          data-aos='fade-right'
           src="/src/assets/stories.png"
           alt="Stories Image"
           className="lg:w-1/2"
@@ -18,7 +19,7 @@ function Stories() {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. It ac purus eget. Sit dolor est proin vestibulum, duis. im dolor sit amet, consectetur adipisc."
             }
           />
-          <a href="#" className="bg-primary rounded-[3px] text-white text-lg lg:text-2xl inline py-3 lg:py-6 px-6 lg:px-12 w-fit">Sponsor now</a>
+          <a data-aos="fade-up" data-aos-duration="800" href="#" className="inline w-fit rounded-[3px] bg-primary px-6 py-3 text-lg text-white lg:px-12 lg:py-6 lg:text-2xl">Sponsor now</a>
         </div>
         
       </div>
