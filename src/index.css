@@ -99,3 +99,6 @@ details p {
   }
 }
 
+footer div > div:nth-last-child(1) a {
+  @apply text-primary underline hover:opacity-80 hover:no-underline;
+}
