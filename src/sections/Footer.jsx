@@ -58,7 +58,7 @@ function Footer() {
               <ul className="flex w-full flex-col 2xl:min-w-[629px]">
                 {data.map((q) => {
                   return (
-                    <li>
+                    <li data-aos="fade-up">
                       <details>
                         <summary>{q[0]}</summary>
                         <p>{q[1]}</p>
@@ -70,12 +70,18 @@ function Footer() {
             );
           })}
         </div>
-        <div className="flex w-full flex-col items-center justify-between gap-4 border-t border-[#C6CFDC] pt-5 text-center font-[Inter] tracking-widest text-black lg:flex-row lg:pt-10">
+        <div data-aos="fade-in" className="flex w-full flex-col items-center justify-between gap-4 border-t border-[#C6CFDC] pt-5 text-center font-[Inter] tracking-widest text-black lg:flex-row lg:pt-10">
           <span>Copyright 2023. Adoptme. All right reserved</span>
           <span>
             <a href="tel:+62811767666">(62)811-767-666</a> |{" "}
             <a href="mailto:adoptme@email.com">adoptme@email.com</a>
           </span>
+        </div>
+        <div className="text-center">
+          <span>
+            Original <a target="_blank" href="https://www.figma.com/community/file/1210923071730191941">Design</a> by <a target="_blank" href="https://www.figma.com/@yohanamarlina">Yohana Marlina</a>
+          </span>
+          <span className="mt-2 block">Coded by <a target="_blank" href="https://github.com/anwsaif">Anwar S</a></span>
         </div>
       </div>
     </footer>
